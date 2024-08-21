@@ -1,0 +1,250 @@
+body {
+    font-family: 'Bebas Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    background-color: #1a1a1a;
+}
+header {
+    background: url('https://example.com/banner.jpg') no-repeat center center;
+    background-size: cover;
+    color: #0fd7f1;
+    padding: 60px 0;
+    text-align: center;
+}
+header h1 {
+    margin: 0;
+    font-size: 3em;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+}
+nav {
+    background: #333;
+    padding: 10px 0;
+    text-align: center;
+}
+nav a {
+    color: #0fd7f1;
+    text-decoration: none;
+    padding: 15px;
+    display: inline-block;
+}
+nav a:hover {
+    background: #444;
+}
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+/*Productos*/
+
+.contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #222; /* Fondo negro para el contenedor */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.items {
+    background: #222; /* Fondo de los elementos un poco más claro que el contenedor */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    margin: 10px; /* Espacio reducido entre elementos */
+    width: 300px; /* Ajusta el tamaño para que sea mediano */
+    max-width: 100%; /* Asegura que no se desborde del contenedor */
+    transition: transform 0.3s ease;
+}
+
+.items:hover {
+    transform: translateY(-10px);
+}
+
+figure {
+    margin: 0;
+    position: relative;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio */
+    overflow: hidden;
+}
+
+figure img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.infoproduct {
+    padding: 15px;
+    text-align: center;
+}
+
+.infoproduct h2 {
+    margin: 10px 0;
+    font-size: 1.2rem; /* Tamaño de fuente más pequeño */
+    color: #fff;
+}
+
+.infoproduct .precio {
+    color: #0fd7f1;
+    font-size: 1.1rem; /* Tamaño de fuente mediano */
+}
+
+.carousel {
+  position: relative;
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.carousel-inner {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+  min-width: 33.33%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.carousel-item img {
+  width: 100%;
+}
+
+.carousel-caption {
+  margin-top: 20px;
+  padding: 10px;
+}
+
+.carousel-controls {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+}
+
+.carousel-control {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.carousel-indicators {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+}
+
+.carousel-indicator {
+  height: 10px;
+  width: 10px;
+  margin: 0 5px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.carousel-indicator.active {
+  background-color: white;
+}
+
+.section {
+    margin-bottom: 40px;
+}
+
+.section h2 {
+    color: #0fd7f1;
+    border-bottom: 2px solid #0fd7f1;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.game-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.game-info img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.game-info div {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.features, .promotions {
+    background: #333;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.features ul, .promotions ul {
+    list-style: none;
+    padding: 0;
+}
+
+.features li, .promotions li {
+    background: #444;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  nav {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  
+  nav a {
+      margin: 5px 0;
+  }
+  
+  .items {
+      width: 100%; /* Los productos ocupan todo el ancho en pantallas pequeñas */
+  }
+}
+
+@media (max-width: 480px) {
+  .infoproduct h2 {
+      font-size: 1rem;
+  }
+
+  .infoproduct .precio {
+      font-size: 0.9rem;
+  }
+  
+  .carousel-caption {
+      font-size: 0.9rem;
+      padding: 5px;
+  }
+}

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PUBG Battlegrounds</title>
+    <link rel="stylesheet" href="pubg.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">PUBG Battlegrounds</div>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#acerca">Acerca</a></li>
+                <li><a href="#caracteristicas">Características</a></li>
+                <li><a href="#descargar">Descargar</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1>Bienvenido a PUBG Battlegrounds</h1>
+            <p>El juego de batalla real más emocionante.</p>
+            <a href="#descargar" class="btn">Descargar Ahora</a>
+        </div>
+        <div class="carousel">
+            <div class="carousel-slide" style="background-image: url('img/pubg.png');"></div>
+            <div class="carousel-slide" style="background-image: url('img/pubg2.jpg');"></div>
+            <div class="carousel-slide" style="background-image: url('img/pubg3.jpg');"></div>
+            <div class="carousel-slide" style="background-image: url('img/pubg4.jpg');"></div>
+            <!-- Puedes añadir más imágenes aquí -->
+        </div>
+    </section>
+
+    <section id="acerca" class="about">
+        <h2>Acerca de PUBG Battlegrounds</h2>
+        <p>PUBG Battlegrounds es un juego de disparos en línea en el que hasta 100 jugadores luchan en una batalla real, un tipo de juego de último hombre en pie donde los jugadores luchan para sobrevivir el mayor tiempo posible.</p>
+    </section>
+    <section id="caracteristicas" class="features">
+        <h2>Características</h2>
+        <div class="feature">
+            <h3>Gráficos Realistas</h3>
+            <p>Disfruta de gráficos de alta calidad que te sumergen en el juego.</p>
+        </div>
+        <div class="feature">
+            <h3>Juego Multijugador</h3>
+            <p>Juega con amigos y compite contra jugadores de todo el mundo.</p>
+        </div>
+        <div class="feature">
+            <h3>Mapas Interactivos</h3>
+            <p>Explora diversos mapas con diferentes terrenos y climas.</p>
+        </div>
+    </section>
+
+    <div class="contenedor"> 
+        <div class="items">
+            <figure>
+                <img src="img/personaje.jpg">
+            </figure>
+            <div class="infoproduct">
+            <h2>Free Pass</h2>
+                    <p>Abierto a todos los jugadores. Gana puntos RP de misiones, artículos y cajas para subir de rango y recolectar recompensas.</p>
+                    <h2 class="precio">Recolecta recompensas gratis
+                        (También disponible para los titulares de Elite Pass)</h2>
+            </div>
+        </div>
+
+        <div class="items">
+            <figure>
+                <img src="img/personaje2.jpg">
+            </figure>
+            <div class="infoproduct">
+            <h2>Elite Pass</h2>
+                    <p>Cuesta 600 UC. Después de la compra, los jugadores obtendrán mejores recompensas y se clasificarán más rápido a través de las Misiones Elite.</p>
+                    <h2 class="precio">Obtener inmediatamente<br>
+                        4,000 UC<br>
+                        Vale por recompensas</h2>
+            </div>
+        </div>
+
+        <div class="items">
+            <figure>
+                <img src="img/personaje3.jpg">
+            </figure>
+            <div class="infoproduct">
+            <h2>Elite Pass Plus</h2>
+                    <p>Incluye todo lo que ofrece el Elite Pass y otorga 25 rangos con un 40% de descuento comparado con el Elite Pass.</p>
+                    <h2 class="precio">Obtener inmediatamente<br>
+                        10,000 UC<br>
+                        Vale por recompensas</h2>
+            </div>
+        </div>
+
+    </div>
+
+
+    <section id="descargar" class="download">
+        <h2>Descargar PUBG Battlegrounds</h2>
+        <p>Disponible para varias plataformas. ¡Descarga y juega ahora!</p>
+        <a href="#" class="btn">Descargar</a>
+    </section>
+    <footer>
+        <div class="social-media">
+            <a href="#"><img src="img/facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="img/twiter.png" alt="Twitter"></a>
+            <a href="#"><img src="img/instagram.jpg" alt="Instagram"></a>
+            <a href="#"><img src="img/youtube.jpg" alt="YouTube"></a>
+        </div>
+        <p>&copy; 2024 PUBG Battlegrounds. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const slides = document.querySelectorAll(".carousel-slide");
+            let currentSlide = 0;
+    
+            function showNextSlide() {
+                slides[currentSlide].classList.remove("active");
+                currentSlide = (currentSlide + 1) % slides.length;
+                slides[currentSlide].classList.add("active");
+            }
+    
+            slides[currentSlide].classList.add("active");
+            setInterval(showNextSlide, 5000); // Cambia de imagen cada 5 segundos
+        });
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garena Free Fire</title>
+    <link rel="stylesheet" href="freefire.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/logofree.png" alt="Logo de Garena Free Fire">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#noticias">Noticias</a></li>
+                <li><a href="#caracteristicas">Características</a></li>
+                <li><a href="#descargar">Descargar</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+                <h1>Bienvenido a Garena Free Fire</h1>
+                <p>El juego de supervivencia más emocionante en dispositivos móviles.</p>
+                <p>Únete a millones de jugadores en todo el mundo en este juego de batalla campal rápido y lleno de acción.</p>
+                <a href="#descargar" class="btn">Descargar Ahora</a>
+        </div>
+        <div class="carousel">
+            <div class="carousel-slide" style="background-image: url('img/fre5.jpg')"></div>
+            <div class="carousel-slide" style="background-image: url('img/fre.jpg');"></div>
+            <div class="carousel-slide" style="background-image: url('img/fre2.jpg');"></div>
+            <div class="carousel-slide" style="background-image: url('img/fre3.jpg');"></div>
+            <!-- Puedes añadir más imágenes aquí -->
+        </div>
+    </section>
+
+    <section id="acerca" class="about">
+            <h2>Últimas Noticias</h2>
+            <article>
+                <h3>Nuevo evento: La Batalla de los Gigantes</h3>
+                <p>Participa en el último evento y gana increíbles recompensas. ¡No te lo pierdas!</p>
+            </article>
+            <article>
+                <h3>Actualización de la Temporada 10</h3>
+                <p>La nueva temporada trae consigo nuevas armas, personajes y modos de juego. ¡Descubre todas las novedades!</p>
+            </article>
+
+        
+    </section>
+    
+    <section id="caracteristicas" class="features">
+        <h2>Características</h2>
+        <div class="feature">
+            <h3>Gráficos Realistas</h3>
+            <p>Disfruta de gráficos y efectos visuales impresionantes.</p>
+        </div>
+        <div class="feature">
+            <h3>Partidas rápidas</h3>
+            <p>Cada partida dura aproximadamente 10 minutos.</p>
+        </div>
+        <div class="feature">
+            <h3>Gran variedad de armas y equipo</h3>
+            <p>Personaliza tu estilo de juego con diferentes armas y objetos.</p>
+        </div>
+        <div class="feature">
+            <h3>Juego en equipo</h3>
+            <p>Forma escuadras con tus amigos y comunicaos mediante chat de voz.</p>
+        </div>
+    </section>
+
+    <div class="contenedor"> 
+        <div class="items">
+            <figure>
+                <img src="img/pasefree.png">
+            </figure>
+            <div class="infoproduct">
+            <h2>Pase Gratuito</h2>
+                    <p>Las recompensas se obtienen al acumular las medallas necesarias. Juega diariamente y completa misiones para alcanzar las 225 medallas y completar el pase.</p>
+                    <h2 class="precio">Recolecta recompensas gratis</h2>
+            </div>
+        </div>
+
+        <div class="items">
+            <figure>
+                <img src="img/pasefre.jpg">
+            </figure>
+            <div class="infoproduct">
+            <h2>Pase de Fuego</h2>
+                    <p>Requiere 225 medallas para completarse y dura un mes. Debes completar misiones y reclamar recompensas antes de que finalice el pase.</p>
+                    <h2 class="precio">$5.99</h2>
+            </div>
+        </div>
+
+    </div>
+
+
+    <section id="descargar" class="download">
+        <h2>Descargar el Juego</h2>
+        <p>Garena Free Fire está disponible para descargar en dispositivos Android e iOS. ¡Descárgalo ahora y únete a la batalla!</p>
+        <a href="#" class="btn">Descargar para Android</a>
+        <a href="#" class="btn">Descargar para iOS</a>
+    </section>
+    <footer>
+        <div class="social-media">
+            <a href="#"><img src="img/facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="img/twiter.png" alt="Twitter"></a>
+            <a href="#"><img src="img/instagram.jpg" alt="Instagram"></a>
+            <a href="#"><img src="img/youtube.jpg" alt="YouTube"></a>
+        </div>
+        <p>&copy; 2024 Garena Free Fire. Todos los derechos reservados.</p>
+    </footer>
+    <scrip>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                const slides = document.querySelectorAll(".carousel-slide");
+                let currentSlide = 0;
+        
+                function showNextSlide() {
+                    slides[currentSlide].classList.remove("active");
+                    currentSlide = (currentSlide + 1) % slides.length;
+                    slides[currentSlide].classList.add("active");
+                }
+        
+                slides[currentSlide].classList.add("active");
+                setInterval(showNextSlide, 5000); // Cambia de imagen cada 5 segundos
+            });
+        </script>
+    </scrip>
+</body>
+</html>

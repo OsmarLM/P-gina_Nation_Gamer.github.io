@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <link rel="stylesheet" href="fornite.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap">
+    <title>Fortnite - Últimas Noticias y Ofertas</title>
+</head>
+<body>
+
+    <header>
+        <h1>Fortnite: Últimas Noticias y Ofertas</h1>
+    </header>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="#">Características</a>
+        <a href="#">Ofertas</a>
+        <a href="#">Noticias</a>
+        <a href="#">Contacto</a>
+    </nav>
+    
+    <div class="container">
+        <section class="section game-info">
+            <div>
+                <h2>¡Fortnite ya está aquí!</h2>
+                <p>Sumérgete en una experiencia de combate sin igual con el último lanzamiento de Fortnite. Con gráficos de última generación, una jugabilidad innovadora y una campaña épica, este es el juego que estabas esperando.</p>
+                <p><strong>Fecha de Lanzamiento:</strong> 15 de Agosto de 2024</p>
+                <p><strong>Precio:</strong> $59.99</p>
+                <a href="#" style="color: #0fd7f1; text-decoration: none; font-weight: bold;">¡Compra Ahora!</a>
+            </div>
+            <img src="img/fortnite.jpg" alt="Fornite" style="width: 300px; height: auto;">
+        </section>
+
+        <section class="section features">
+            <h2>Características Destacadas de Fortnite</h2>
+            <ul>
+                <li>Fortnite ofrece varios modos de juego, incluyendo el popular modo Battle Royale, el modo Creativo, y el modo Salvar el Mundo.</li>
+                <li>Una característica distintiva de Fortnite es la habilidad de construir estructuras durante el combate, lo que añade una capa estratégica única al juego.</li>
+                <li>Fortnite es conocido por sus eventos en vivo, que incluyen conciertos virtuales, colaboraciones con franquicias populares, y cambios de temporada que afectan el mundo del juego.</li>
+                <li>El Pase de Batalla permite a los jugadores desbloquear recompensas exclusivas a través de la progresión de niveles durante una temporada.</li>
+                <li>Los jugadores pueden personalizar sus personajes con una amplia variedad de skins, mochilas, picos, y otros elementos cosméticos.</li>
+            </ul>
+        </section>
+
+        <section class="section promotions">
+            <h2>Ofertas Especiales</h2>
+            <ul>
+                <li>Compra el juego y obtén el paquete de mapas exclusivos GRATIS</li>
+                <li>Descuento del 20% en la edición de colección por tiempo limitado</li>
+                <li>Accesorios temáticos con un 15% de descuento en nuestra tienda online</li>
+            </ul>
+        </section>
+
+        <div class="contenedor"> 
+            <div class="items">
+                <figure>
+                    <img src="img/pasefornite2.jpg">
+                </figure>
+                <div class="infoproduct">
+
+                <h2>Pase Gratuito</h2>
+                        <p>Pase de Temporada</p>
+                        <h2 class="precio">Gratuito</h2>
+                </div>
+            </div>
+    
+            <div class="items">
+                <figure>
+                    <img src="img/pasefornite.png">
+                </figure>
+                <div class="infoproduct">
+                <h2>Pase Premium</h2>
+                        <p>Pase de Temporada</p>
+                        <h2 class="precio">Costo    950 PaVos/Monedas V</h2>
+                </div>
+            </div>
+    
+        </div>
+        
+        <div class="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item">
+                    <img src="img/pavos1.png" alt="Foto 1">
+                    <div class="carousel-caption">
+                        <h4>1,000 Pavos</h4>
+                        <p>$7.99</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="img/pavos2.png" alt="Foto 2">
+                    <div class="carousel-caption">
+                        <h4>2,800 Pavos + 3% Adicional</h4>
+                        <p>$19.99</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="img/pavos3.png" alt="Foto 3">
+                    <div class="carousel-caption">
+                        <h4>5,000 Pavos + 13% Adicional</h4>
+                        <p>$31.99</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="img/pavos4.png" alt="Foto 4">
+                    <div class="carousel-caption">
+                        <h4>13,500 Pavos + 20% Adicional</h4>
+                        <p>$79.99</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-controls">
+                <button class="carousel-control prev" onclick="moveSlide(-1)">&#10094;</button>
+                <button class="carousel-control next" onclick="moveSlide(1)">&#10095;</button>
+            </div>
+            <div class="carousel-indicators">
+                <span class="carousel-indicator active" onclick="currentSlide(0)"></span>
+                <span class="carousel-indicator" onclick="currentSlide(1)"></span>
+            </div>
+        </div>
+
+        <section class="section news">
+            <h2>Últimas Noticias</h2>
+            <p>¡No te pierdas las últimas actualizaciones sobre Fortnite! Sigue nuestras noticias para estar al tanto de eventos, actualizaciones y más.</p>
+            <a href="#" style="color: #0fd7f1; text-decoration: none; font-weight: bold;">Leer Más</a>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Fortnite. Todos los derechos reservados.</p>
+        <p><a href="#" style="color: #0fd7f1;">Política de Privacidad</a> | <a href="#" style="color: #0fd7f1;">Términos de Servicio</a></p>
+    </footer>
+
+    <script src="pagina_segunda.js"></script>
+
+</body>
+</html>

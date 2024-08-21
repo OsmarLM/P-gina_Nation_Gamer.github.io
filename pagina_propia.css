@@ -1,0 +1,261 @@
+* {
+    margin: 0;
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Asegura que el cuerpo tenga al menos la altura de la ventana */
+  background-image: url('img/fondo.jpeg');
+  background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
+  background-position: center; /* Centra la imagen en el contenedor */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  background-attachment: fixed; /* Hace que el fondo no se mueva con el scroll */
+}
+
+header {
+    background-color: #333;
+    padding: 10px 0;
+    color: white;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+  width: 90px;
+  height: auto;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 10px;
+    transition: background-color 0.3s;
+}
+
+header nav a:hover {
+    background-color: #333;
+}
+
+/* Estilos para el contenedor del buscador */
+.container {
+    position: absolute;
+    top: 22%; /* Alinea verticalmente en el centro de la página */
+    left: 50%; /* Alinea horizontalmente en la mitad de la página */
+    transform: translateX(-50%); /* Corrige el centrado con respecto al 50% del ancho */
+    width: 550px;
+    text-align: center;
+  }
+  
+  /* Estilos para el input del buscador */
+  .container input {
+    width: 500px;
+    padding: 10px;
+    padding-right: 35px;
+    border-radius: 5px;
+    border: 0;
+    outline: none;
+    font-size: 1rem;
+  }
+  
+  /* Estilos para el botón del buscador */
+  .container button {
+    background-color: white;
+    padding: 10px 15px;
+    position: absolute;
+    border: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 0 5px 5px 0;
+    color: black; /* Cambia el color del ícono a negro para que sea visible */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .container button:hover {
+    background-color: black;
+    color: white; /* Cambia el color del ícono a blanco en hover */
+  }
+  
+  
+  /*Menu desplegable*/
+  /* Estilos para el menú desplegable */
+  #custom-btn-menu {
+    display: none;
+  }
+  
+  .custom-container-menu {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    transition: all 500ms ease;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 999; /* Asegura que esté encima de otros elementos */
+  }
+  
+  #custom-btn-menu:checked ~ .custom-container-menu {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .custom-cont-menu {
+    width: 100%;
+    max-width: 250px;
+    background: #1c1c1c;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    transition: all 500ms ease;
+    transform: translateX(100%);
+  }
+  
+  #custom-btn-menu:checked ~ .custom-container-menu .custom-cont-menu {
+    transform: translateX(0%);
+  }
+  
+  .custom-cont-menu nav {
+    margin-top: 50px; /* Espacio superior para separar del encabezado */
+  }
+  
+  .custom-cont-menu nav a {
+    display: block;
+    text-decoration: none;
+    padding: 20px;
+    color: #c7c7c7;
+    border-left: 5px solid transparent;
+    transition: all 400ms ease;
+  }
+  
+  .custom-cont-menu nav a:hover {
+    border-left: 5px solid #c7c7c7;
+    background: #1f1f1f;
+  }
+  
+  .custom-close-menu {
+    position: absolute;
+    right: 5px;
+    top: 10px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  
+  /* Estilos para el encabezado y el botón de menú */
+  .custom-header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: white;
+    z-index: 1000; /* Asegura que esté encima de otros elementos */
+    display: flex;
+    justify-content: flex-end; /* Mueve el contenido del encabezado al borde derecho */
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Opcional: agrega una sombra */
+  }
+  
+  .custom-btn-menu {
+    position: fixed;
+    top: 10px;
+    right: 20px;
+    z-index: 1001;
+  }
+  
+  .custom-icon-menu {
+    cursor: pointer;
+    font-size: 24px;
+    color: white /* Cambia el color según tus necesidades */
+}
+
+.fondo {
+    background-size: cover; /* Ajusta el tamaño del GIF para cubrir el contenedor */
+    background-position: center; /* Centra el GIF en el contenedor */
+    background-repeat: no-repeat; /* Evita que el GIF se repita */
+    /* Otras propiedades opcionales */
+    background-attachment: fixed;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: auto;
+}
+
+.gallery-container {
+    max-width: 800px; /* Ancho máximo de la galería */
+    width: 100%;
+    padding: 20px;
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.img {
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.img:hover {
+  box-shadow: 0 10px 20px black;
+  transition: all 1s;
+  transform: scale(1.05);
+}
+
+.img img {
+    max-width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.content {
+    position: relative;
+
+    height: 90px;
+    position: relative;
+    z-index: 1;
+    color: #000000; /* Cambia el color del texto según sea necesario para contrastar con el fondo */
+    text-align: center; /* Centra el texto, si lo prefieres */
+}
+
+h1 {
+    font-size: 3em;
+    margin-top: 0.5em;
+}
+
+p {
+    font-size: 1.2em;
+}
+
+header, footer {
+  position: relative;
+  z-index: 1;
+}

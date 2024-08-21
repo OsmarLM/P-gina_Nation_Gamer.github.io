@@ -1,0 +1,210 @@
+body {
+    font-family: 'Bebas Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    color: #fff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #222;
+}
+
+.logo img {
+    width: 50px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffef0b;
+    font-size: 18px;
+}
+
+.hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #eb2424;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-content {
+    max-width: 600px;
+    z-index: 2; /* Asegura que el contenido esté delante del fondo */
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.btn {
+    background: #ff8800;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.carousel {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    overflow: hidden;
+    z-index: -1; /* Asegura que el carrusel esté detrás del contenido */
+}
+
+.carousel-slide {
+    min-width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: opacity 1s ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.carousel-slide.active {
+    opacity: 1;
+}
+
+.about, .features {
+    padding: 2rem 1rem;
+    text-align: center;
+    background-color: #222;
+}
+
+.download{
+    padding: 1rem 1rem;
+    text-align: center;
+    background-color: #333;
+}
+.features {
+    background-color: #333;
+}
+
+.feature {
+    margin-bottom: 2rem;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #222; /* Fondo negro para el contenedor */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.items {
+    background: #222; /* Fondo de los elementos un poco más claro que el contenedor */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    margin: 10px; /* Espacio reducido entre elementos */
+    width: 300px; /* Ajusta el tamaño para que sea mediano */
+    max-width: 100%; /* Asegura que no se desborde del contenedor */
+    transition: transform 0.3s ease;
+}
+
+.items:hover {
+    transform: translateY(-10px);
+}
+
+figure {
+    margin: 0;
+    position: relative;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio */
+    overflow: hidden;
+}
+
+figure img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.infoproduct {
+    padding: 15px;
+    text-align: center;
+}
+
+.infoproduct h2 {
+    margin: 10px 0;
+    font-size: 1.2rem; /* Tamaño de fuente más pequeño */
+    color: #fff;
+}
+
+.infoproduct .precio {
+    color: #ff8800;
+    font-size: 1.1rem; /* Tamaño de fuente mediano */
+}
+
+footer {
+    background: #222;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+footer .social-media {
+    margin-bottom: 1rem;
+}
+
+footer .social-media a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+footer .social-media img {
+    width: 32px; /* Ajusta el tamaño de los iconos según sea necesario */
+    height: 32px;
+    vertical-align: middle;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+form label {
+    margin: 10px 0 5px;
+}
+
+form input, form textarea {
+    padding: 10px;
+    width: 300px;
+    margin-bottom: 15px;
+}
